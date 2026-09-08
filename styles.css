@@ -92,6 +92,12 @@ body.cursor-hover .cursor-dot {
 }
 .wordmark { text-decoration: none; font-weight: 500; }
 .nav-status { color: var(--muted); }
+.nav-actions { display: flex; align-items: center; gap: 20px; }
+.nav-contact {
+  padding: 7px 10px; border: 1px solid rgba(255,176,238,.55); border-radius: 999px;
+  color: var(--text); text-decoration: none; transition: color .25s, background .25s, border-color .25s;
+}
+.nav-contact:hover { color: #170719; background: var(--acid); border-color: var(--acid); }
 .sound-toggle { color: var(--muted); font: inherit; letter-spacing: inherit; }
 .sound-toggle span { color: var(--acid); }
 
@@ -242,8 +248,11 @@ h1 em, h2 em { font-family: Georgia, serif; font-weight: 400; }
   .cursor-dot { display: none; }
   .bubble-field span { opacity: .32; }
   .text-reveal .js-word { opacity: 1; transform: none; }
-  .nav { padding: 18px; }
+  .nav { padding: 14px 18px; }
   .nav-status { display: none; }
+  .nav-actions { gap: 12px; }
+  .nav-contact { padding: 6px 8px; font-size: 9px; }
+  .sound-toggle { font-size: 9px; }
   .hero { padding: 120px 7vw 80px; }
   .moth-wrap { width: 90vw; right: -20vw; top: 20vh; opacity: .45; }
   .intro { grid-template-columns: 1fr; min-height: 70vh; gap: 50px; }
@@ -254,7 +263,7 @@ h1 em, h2 em { font-family: Georgia, serif; font-weight: 400; }
   .music { padding-bottom: 8vw; }
   .video-feature { padding-top: 8vw; padding-bottom: 8vw; }
   .references { padding-top: 8vw; padding-bottom: 8vw; }
-  .contact { min-height: 48vh; }
+  .contact { min-height: 48vh; padding-bottom: calc(12vw + 145px); }
   .section-heading { margin-bottom: 60px; }
   .track { grid-template-columns: 40px 1fr auto; }
   .track-sub { display: none; }
